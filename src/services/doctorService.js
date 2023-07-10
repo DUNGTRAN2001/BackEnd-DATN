@@ -200,7 +200,7 @@ let getDetailDoctorById = (doctorId) => {
           nest: true,
         });
         if (dataDoctor && dataDoctor.image) {
-          dataDoctor.image = new Buffer(dataDoctor.image, "base64").toString(
+          dataDoctor.image = Buffer.from(dataDoctor.image, "base64").toString(
             "binary"
           );
         }
@@ -411,7 +411,7 @@ let getProfileDotorById = (doctorId) => {
           nest: true,
         });
         if (dataDoctor && dataDoctor.image) {
-          dataDoctor.image = new Buffer(dataDoctor.image, "base64").toString(
+          dataDoctor.image = Buffer.from(dataDoctor.image, "base64").toString(
             "binary"
           );
         }

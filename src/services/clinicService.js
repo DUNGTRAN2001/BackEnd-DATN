@@ -41,7 +41,7 @@ let createClinic = (data) => {
         );
         if(response?.length > 0){
           response?.map(item=>{
-            item.image = new Buffer(item.image, "base64").toString(
+            item.image = Buffer.from(item.image, "base64").toString(
               "binary"
             );
             return item
