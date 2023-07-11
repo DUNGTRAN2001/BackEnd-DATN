@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
     // Nói được cho biết làm sao kết nối đến db
-    'config': path.resolve('./src/config', 'config.json'),
+    'config': path.resolve('./src/config', 'config.js'),
     // cách chúng ta tạo bảng trong db
     'migrations-path': path.resolve('./src', 'migrations'),
     // tạo thư mục models

@@ -2,7 +2,7 @@
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     // addColumn nếu muốn thêm cột
-    await queryInterface.createTable("markdowns", {
+    await queryInterface.createTable("Markdowns", {
       //     contentHTML: DataTypes.TEXT("long"),
       //   contentMarkdown: DataTypes.TEXT("long"),
       //   description: DataTypes.TEXT("long"),
@@ -50,6 +50,6 @@ module.exports = {
     });
   },
   down: async (queryInterface, Sequelize) => {
-    await queryInterface.dropTable("markdowns");
+    await queryInterface.dropTable("Markdowns");
   },
 };

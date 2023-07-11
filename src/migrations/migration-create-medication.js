@@ -2,7 +2,7 @@
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     // addColumn nếu muốn thêm cột
-    await queryInterface.createTable("medications", {
+    await queryInterface.createTable("Medications", {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -26,6 +26,6 @@ module.exports = {
     });
   },
   down: async (queryInterface, Sequelize) => {
-    await queryInterface.dropTable("medications");
+    await queryInterface.dropTable("Medications");
   },
 };
